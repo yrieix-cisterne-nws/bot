@@ -29,4 +29,3 @@ draw.text((x, image_height-50), "14 October 2025", font=texte, anchor="mm")
 
 image.show()
 image.save("s18timer.png")
-
