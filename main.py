@@ -5,10 +5,10 @@ import datetime as dt
 # Font used
 timer = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", 150, )
 texte = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", 70)
-image = Image.open("s18splashart.png")
+image = Image.open("s19splashart.png")
 
 # Date of new season and date of now
-endofseason = dt.datetime(2025, 10, 14, 20, 0)
+endofseason = dt.datetime(2025, 12, 9, 20, 0)
 actualtime = dt.datetime.now()
 
 # Calculation of the time left between actualtime and endofseason
@@ -23,9 +23,9 @@ x = image_width / 2
 y = image_height / 2
 
 draw = ImageDraw.Draw(image)
-draw.text((x, y), endofseason, font=timer, anchor="mm", fill="black")
+draw.text((x, y), endofseason, font=timer, anchor="mm", fill="white")
 draw.text((x, 50), "Season 18", font=texte, anchor="mm")
 draw.text((x, image_height-50), "14 October 2025", font=texte, anchor="mm")
 
 image.show()
-image.save("s18timer.png")
+image.save("s19timer.png")
